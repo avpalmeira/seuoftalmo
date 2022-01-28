@@ -20,3 +20,37 @@
   justify-content: center;
   align-items: center;
 }
+
+.hero,
+.services {
+  background: #10aac5;
+  height: 100%;
+}
+
+.procedures,
+.contact {
+  background: white;
+  color: #345170;
+}
+
+.aboutUs,
+.footer {
+  background: #345170;
+  color: white;
+}
+
+.aboutLocation {
+  background: #d2e5e6;
+  color: #345170;
+}
+
+.heroMsg,
+.servicesTitle,
+.services > p {
+  color: white;
+  font-weight: bold;
+}
+
+.heroImg {
+  max-width: 780px;
+}
