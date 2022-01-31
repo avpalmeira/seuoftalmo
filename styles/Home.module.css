@@ -1,7 +1,3 @@
-.container {
-  padding: 0 2rem;
-}
-
 .header {
   padding: 2rem 0;
   flex: 1;
@@ -19,6 +15,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero {
+  padding: 0 0 1rem;
+}
+
+.hero,
+.services,
+.procedures,
+.contact,
+.aboutUs,
+.aboutLocation,
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero,
@@ -45,12 +57,49 @@
 }
 
 .heroMsg,
-.servicesTitle,
-.services > p {
+.servicesTitle {
   color: white;
   font-weight: bold;
 }
 
 .heroImg {
   max-width: 780px;
+}
+
+.serviceList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.proceduresList {
+  border: 2px solid #345170;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  width: 90%;
+  max-width: 750px;
+  margin: 2rem 0;
+}
+
+.proceduresList > p {
+  text-align: center;
+}
+
+.proceduresList > h3 {
+  position: absolute;
+  top: -30px;
+  background: white;
+  padding: 0 1rem;
 }
