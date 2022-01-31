@@ -2,10 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStethoscope, faHeartbeat, faClock, faClinicMedical } from '@fortawesome/free-solid-svg-icons'
-import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/Home.module.css'
+
 import heroImg from '../public/big-eye.png'
 import logo from '../public/logo.jpg'
+import surgery from '../public/surgery.jpg'
+import clinic from '../public/clinic.jpg'
+import map from '../public/map.png'
+
 
 export default function Home() {
   return (
@@ -23,7 +28,9 @@ export default function Home() {
         <header className={styles.header}>
           <Image src={logo} width={141} height={65} alt="SeuOftalmo Logo"/>
           <a href="#" className={styles.actionButton}>
-            Botão Agendar Consulta
+            <span className={styles.actionButtontext}>
+              Botão Agendar Consulta
+            </span>
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </header>
@@ -75,23 +82,42 @@ export default function Home() {
           <p>
             Central de atendimento em procedimentos oftalmológicos para atender pacientes sem plano de saúde.
             Medicina Acessível - Aqui você pode.
+          </p>
+          <p>
             Procedimentos cirúrgicos com preço acessível e facilitado - cirurgia em até 12x no cartão.
+          </p>
+          <p>
             Equipe médica com mais de 35 anos de experiência. Exames, diagnósticos e procedimentos.
             Agilidade em marcação de horário e atendimento
           </p>
+          <figure>
+            <Image src={surgery} width={240} height={200} alt="Eye surgery"/>
+          </figure>
         </section>
         <section className={styles.aboutLocation}>
           <h2>Clínica</h2>
+          <Image src={map} width={300} height={200} alt="Location"/>
           <p>Equipe médica com mais de 35 anos de experiência.</p>
+          <Image src={clinic} width={300} height={200} alt="Medical Clinic"/>
         </section>
         <section className={styles.contact}>
           <h2>Fale Conosco!</h2>
           <p>Queremos te ajudar.</p>
+          <a href="#" className={styles.actionButton}>
+            <span className={styles.actionButtontext}>
+              Botão Agendar Consulta
+            </span>
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
         </section>
         <footer className={styles.footer}>
-          <div>
-            <FontAwesomeIcon icon={faFacebook} />
-            <FontAwesomeIcon icon={faInstagram} />
+          <div className={styles.socialIconsFooter}>
+            <div className={styles.socialIcon}>
+              <FontAwesomeIcon icon={faFacebookF} />
+            </div>
+            <div className={styles.socialIcon}>
+              <FontAwesomeIcon icon={faInstagram} />
+            </div>
           </div>
           <p>Copyright 2022 SeuOftalmo. Todos os direitos reservados.</p>
           <p>O site SeuOftalmo.com.br é de propriedade da Visão 360 Ltda. registrada sob o CNPJ 25.186.815/0001-38</p>
