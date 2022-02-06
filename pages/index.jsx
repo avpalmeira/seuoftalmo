@@ -10,7 +10,7 @@ import logo from '../public/logo.jpg'
 import surgery from '../public/surgery.jpg'
 import clinic from '../public/clinic.jpg'
 import map from '../public/map.png'
-
+import triangles from '../public/triangle-transparent.svg'
 
 export default function Home() {
   return (
@@ -37,27 +37,30 @@ export default function Home() {
         <section className={styles.hero}>
           <Image className={styles.heroImg} src={heroImg} alt="Visão melhorada" />
           <div className={styles.heroMsg}>
-            <p>A Central de Atendimento em procedimentos oftalmológicos para  pacientes sem plano de saúde.</p>
-            <p>Aqui você pode.</p>
+            <p>
+              A Central de<br/>Atendimento em<br/>procedimentos<br/>
+              oftalmológicos para<br/>pacientes sem plano de<br/>saúde.
+            </p>
+            <p className={styles.msgFeature}>Aqui você pode.</p>
           </div>
         </section>
         <section className={styles.services}>
           <h2 className={styles.servicesTitle}>Nossos Serviços</h2>
           <div className={styles.serviceList}>
             <div className={styles.service}>
-              <FontAwesomeIcon icon={faStethoscope} />
+              <FontAwesomeIcon icon={faStethoscope} className={styles.serviceIcon} />
               <p>Equipe médica com mais de 35 anos de experiência</p>
             </div>
             <div className={styles.service}>
-              <FontAwesomeIcon icon={faHeartbeat} />
+              <FontAwesomeIcon icon={faHeartbeat} className={styles.serviceIcon} />
               <p>Exames, diagnósticos e procedimentos</p>
             </div>
             <div className={styles.service}>
-              <FontAwesomeIcon icon={faClock} />
+              <FontAwesomeIcon icon={faClock} className={styles.serviceIcon} />
               <p>Agilidade em marcação de horário e atendimento</p>
             </div>
             <div className={styles.service}>
-              <FontAwesomeIcon icon={faClinicMedical} />
+              <FontAwesomeIcon icon={faClinicMedical} className={styles.serviceIcon} />
               <p>Estrutura e equipamentos modernos</p>
             </div>
           </div>
