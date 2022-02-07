@@ -34,6 +34,12 @@
   padding: 1rem 1rem 3rem;
 }
 
+.procedures,
+.aboutUs,
+.aboutLocation {
+  padding-top: 15vw;
+}
+
 .hero {
   padding: 0 0 3rem;
   position: relative;
@@ -171,3 +177,64 @@
   align-items: center;
   border-radius: 1rem;
 }
+
+/* DIVIDERS */
+
+.doubleTriangle {
+  position: relative;
+  margin-left: -2rem;
+  width: 100%;
+}
+
+.triangleTopRightPrimary {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: calc(100vw * 0.18) solid #10aac5;
+  border-left: 100vw solid transparent;
+  margin-top: 1px;
+}
+
+.triangleTopRightWhite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: calc(100vw * 0.18) solid white;
+  border-left: 100vw solid transparent;
+  margin-top: 1px;
+}
+
+.triangleTopLeftSecondary {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: calc(100vw * 0.18) solid #345170;
+  border-right: 100vw solid transparent;
+  margin-top: 1px;
+}
+
+.triangleBottomLeftWhite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: calc(100vw * 0.18) solid white;
+  border-right: 100vw solid transparent;
+}
+
+.triangleBottomLeftSecondary {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: calc(100vw * 0.18) solid #345170;
+  border-right: 100vw solid transparent;
+}
+
+.triangleBottomRightAlternative {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: calc(100vw * 0.18) solid #d2e5e6;
+  border-left: 100vw solid transparent;
+}
+
+/* /DIVIDERS */

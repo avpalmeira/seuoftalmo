@@ -64,6 +64,10 @@ export default function Home() {
               <p>Estrutura e equipamentos modernos</p>
             </div>
           </div>
+          <div className={styles.doubleTriangle}>
+            <div className={styles.triangleTopRightPrimary}></div>
+            <div className={styles.triangleBottomLeftWhite}></div>
+          </div>
         </section>
         <section className={styles.procedures}>
           <h2 className={styles.proceduresTitle}>Exames e Procedimentos</h2>
@@ -78,6 +82,10 @@ export default function Home() {
           <div className={styles.proceduresList}>
             <h3>Procedimentos</h3>
             <p>Pterígio (carne crescida)  •  Calázio  •  Refrativa  •  Catarata</p>
+          </div>
+          <div className={styles.doubleTriangle}>
+            <div className={styles.triangleTopRightWhite}></div>
+            <div className={styles.triangleBottomLeftSecondary}></div>
           </div>
         </section>
         <section className={styles.aboutUs}>
@@ -96,6 +104,10 @@ export default function Home() {
           <figure>
             <Image src={surgery} width={240} height={200} alt="Eye surgery"/>
           </figure>
+          <div className={styles.doubleTriangle}>
+            <div className={styles.triangleTopLeftSecondary}></div>
+            <div className={styles.triangleBottomRightAlternative}></div>
+          </div>
         </section>
         <section className={styles.aboutLocation}>
           <h2>Clínica</h2>
