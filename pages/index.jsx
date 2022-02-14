@@ -29,13 +29,15 @@ export default function Home() {
           <Image src={logo} width={141} height={65} alt="SeuOftalmo Logo"/>
           <a href="#" className={styles.actionButton}>
             <span className={styles.actionButtontext}>
-              Botão Agendar Consulta
+              Agendar Consulta
             </span>
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </header>
         <section className={styles.hero}>
-          <Image className={styles.heroImg} src={heroImg} alt="Visão melhorada" />
+          <div className={styles.heroImgWrapper}>
+            <Image className={styles.heroImg} src={heroImg} alt="Visão melhorada" />
+          </div>
           <div className={styles.heroMsg}>
             <p>
               A Central de<br/>Atendimento em<br/>procedimentos<br/>
@@ -102,7 +104,7 @@ export default function Home() {
             Agilidade em marcação de horário e atendimento
           </p>
           <figure>
-            <Image src={surgery} width={240} height={200} alt="Eye surgery"/>
+            <Image className={styles.photo} src={surgery} width={240} height={200} alt="Eye surgery"/>
           </figure>
           <div className={styles.doubleTriangle}>
             <div className={styles.triangleTopLeftSecondary}></div>
@@ -111,16 +113,16 @@ export default function Home() {
         </section>
         <section className={styles.aboutLocation}>
           <h2>Clínica</h2>
-          <Image src={map} width={300} height={200} alt="Location"/>
+          <Image className={styles.photo} src={map} width={300} height={200} alt="Location"/>
           <p>Equipe médica com mais de 35 anos de experiência.</p>
-          <Image src={clinic} width={300} height={200} alt="Medical Clinic"/>
+          <Image className={styles.photo} src={clinic} width={300} height={200} alt="Medical Clinic"/>
         </section>
         <section className={styles.contact}>
           <h2>Fale Conosco!</h2>
           <p>Queremos te ajudar.</p>
           <a href="#" className={styles.actionButton}>
             <span className={styles.actionButtontext}>
-              Botão Agendar Consulta
+              Tire suas dúvidas
             </span>
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
