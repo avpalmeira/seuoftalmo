@@ -7,10 +7,20 @@
   align-items: center;
 }
 
+.menuItems {
+  display: none;
+}
+
+.headerLinks {
+  display: flex;
+  align-items: center;
+}
+
 .actionButton {
   padding: 0.75rem 1rem;
   margin-top: 1.5rem;
   border-radius: 6px;
+  max-width: 210px;
   color: white;
   background: #10aac5;
   display: flex;
@@ -44,7 +54,7 @@
 .procedures,
 .aboutUs,
 .aboutLocation {
-  padding-top: 15vw;
+  padding-top: 15%;
 }
 
 .hero {
@@ -75,6 +85,10 @@
   color: white;
 }
 
+.aboutUsText {
+  margin-bottom: 3rem;
+}
+
 .aboutLocation {
   background: #d2e5e6;
   color: #345170;
@@ -90,7 +104,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 1rem;
   padding-left: 1rem;
   position: absolute;
   left: 0;
@@ -104,6 +118,10 @@
 
 .heroMsg > .msgFeature {
   font-weight: bold;
+}
+
+.heroMsg > .actionButton {
+  display: none;
 }
 
 .heroImgWrapper {
@@ -163,14 +181,29 @@
   padding: 0 1rem;
 }
 
-.aboutUs > p {
-  white-space: pre-line;
+.aboutUsText {
   text-align: center;
   padding: 0 2rem;
 }
 
 .aboutLocation > p {
   margin: 2rem 0;
+}
+
+.locationImagesContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.locationContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.locationContainer > p {
+  text-align: center;
 }
 
 .socialIconsFooter {
@@ -251,3 +284,89 @@
 }
 
 /* /DIVIDERS */
+
+@media screen and (min-width: 400px) {
+  .services {
+    padding-top: 20%;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .heroMsg {
+    width: 55vw;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    top: 40px;
+  }
+
+  .services {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heroMsg > p {
+    font-size: 1.5rem;
+  }
+
+  .heroMsg > .actionButton {
+    display: block;
+  }
+
+  .header {
+    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .headerLinks > .actionButton {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heroMsg {
+    padding-left: 2.5rem;
+  }
+
+  .heroMsg > p {
+    font-size: 1.75rem;
+  }
+
+  .menuItems {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin-right: 3rem;
+  }
+
+  .menuItems > a:visited,
+  .menuItems > a:link,
+  .menuItems > a:hover {
+    color: #10aac5;
+    font-weight: bold;
+  }
+
+  .locationImagesContainer {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .aboutUsText {
+    text-align: left;
+    max-width: 30%;
+  }
+
+  .aboutUsFigure {
+    max-width: 40%;
+  }
+
+  .aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

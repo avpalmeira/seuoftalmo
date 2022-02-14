@@ -10,7 +10,6 @@ import logo from '../public/logo.jpg'
 import surgery from '../public/surgery.jpg'
 import clinic from '../public/clinic.jpg'
 import map from '../public/map.png'
-import triangles from '../public/triangle-transparent.svg'
 
 export default function Home() {
   return (
@@ -27,12 +26,20 @@ export default function Home() {
       <main>
         <header className={styles.header}>
           <Image src={logo} width={141} height={65} alt="SeuOftalmo Logo"/>
-          <a href="#" className={styles.actionButton}>
-            <span className={styles.actionButtontext}>
-              Agendar Consulta
-            </span>
-            <FontAwesomeIcon icon={faWhatsapp} />
-          </a>
+          <div className={styles.headerLinks}>
+            <nav className={styles.menuItems}>
+              <a href="#services">Serviços</a>
+              <a href="#procedures">Procedimentos</a>
+              <a href="#aboutUs">Quem Somos</a>
+              <a href="#aboutLocation">Clínica</a>
+            </nav>
+            <a href="#" className={styles.actionButton}>
+              <span className={styles.actionButtontext}>
+                Agendar Consulta
+              </span>
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
+          </div>
         </header>
         <section className={styles.hero}>
           <div className={styles.heroImgWrapper}>
@@ -44,6 +51,12 @@ export default function Home() {
               oftalmológicos para<br/>pacientes sem plano de<br/>saúde.
             </p>
             <p className={styles.msgFeature}>Aqui você pode.</p>
+            <a href="#" className={styles.actionButton}>
+              <span className={styles.actionButtontext}>
+                Fale pelo WhatsApp
+              </span>
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
           </div>
         </section>
         <section className={styles.services}>
@@ -92,20 +105,24 @@ export default function Home() {
         </section>
         <section className={styles.aboutUs}>
           <h2>Quem Somos</h2>
-          <p>
-            Central de atendimento em procedimentos oftalmológicos para atender pacientes sem plano de saúde.
-            Medicina Acessível - Aqui você pode.
-          </p>
-          <p>
-            Procedimentos cirúrgicos com preço acessível e facilitado - cirurgia em até 12x no cartão.
-          </p>
-          <p>
-            Equipe médica com mais de 35 anos de experiência. Exames, diagnósticos e procedimentos.
-            Agilidade em marcação de horário e atendimento
-          </p>
-          <figure>
-            <Image className={styles.photo} src={surgery} width={240} height={200} alt="Eye surgery"/>
-          </figure>
+          <div className={styles.aboutUsContainer}>
+            <div className={styles.aboutUsText}>
+              <p>
+                Central de atendimento em procedimentos oftalmológicos para atender pacientes sem plano de saúde.
+                Medicina Acessível - Aqui você pode.
+              </p>
+              <p>
+                Procedimentos cirúrgicos com preço acessível e facilitado - cirurgia em até 12x no cartão.
+              </p>
+              <p>
+                Equipe médica com mais de 35 anos de experiência. Exames, diagnósticos e procedimentos.
+                Agilidade em marcação de horário e atendimento
+              </p>
+            </div>
+            <figure className={styles.aboutUsFigure}>
+              <Image className={styles.photo} src={surgery} alt="Eye surgery"/>
+            </figure>
+          </div>
           <div className={styles.doubleTriangle}>
             <div className={styles.triangleTopLeftSecondary}></div>
             <div className={styles.triangleBottomRightAlternative}></div>
@@ -113,9 +130,15 @@ export default function Home() {
         </section>
         <section className={styles.aboutLocation}>
           <h2>Clínica</h2>
-          <Image className={styles.photo} src={map} width={300} height={200} alt="Location"/>
-          <p>Equipe médica com mais de 35 anos de experiência.</p>
-          <Image className={styles.photo} src={clinic} width={300} height={200} alt="Medical Clinic"/>
+          <div className={styles.locationImagesContainer}>
+            <div className={`${styles.locationContainer} ${styles.locationMap}`}>
+              <Image className={styles.photo} src={map} width={300} height={200} alt="Location"/>
+            </div>
+            <div className={styles.locationContainer}>
+              <p>Equipe médica com mais de <br/>35 anos de experiência.</p>
+              <Image className={styles.photo} src={clinic} width={300} height={200} alt="Medical Clinic"/>
+            </div>
+          </div>
         </section>
         <section className={styles.contact}>
           <h2>Fale Conosco!</h2>
