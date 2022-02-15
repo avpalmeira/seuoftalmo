@@ -59,8 +59,8 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section className={styles.services}>
-          <h2 className={styles.servicesTitle}>Nossos Serviços</h2>
+        <section id="services" className={styles.services}>
+          <h2>Nossos Serviços</h2>
           <div className={styles.serviceList}>
             <div className={styles.service}>
               <FontAwesomeIcon icon={faStethoscope} className={styles.serviceIcon} />
@@ -84,7 +84,7 @@ export default function Home() {
             <div className={styles.triangleBottomLeftWhite}></div>
           </div>
         </section>
-        <section className={styles.procedures}>
+        <section id="procedures" className={styles.procedures}>
           <h2 className={styles.proceduresTitle}>Exames e Procedimentos</h2>
           <div className={styles.proceduresList}>
             <h3>Exames</h3>
@@ -103,7 +103,7 @@ export default function Home() {
             <div className={styles.triangleBottomLeftSecondary}></div>
           </div>
         </section>
-        <section className={styles.aboutUs}>
+        <section id="aboutUs" className={styles.aboutUs}>
           <h2>Quem Somos</h2>
           <div className={styles.aboutUsContainer}>
             <div className={styles.aboutUsText}>
@@ -128,15 +128,15 @@ export default function Home() {
             <div className={styles.triangleBottomRightAlternative}></div>
           </div>
         </section>
-        <section className={styles.aboutLocation}>
+        <section id="aboutLocation" className={styles.aboutLocation}>
           <h2>Clínica</h2>
           <div className={styles.locationImagesContainer}>
             <div className={`${styles.locationContainer} ${styles.locationMap}`}>
-              <Image className={styles.photo} src={map} width={300} height={200} alt="Location"/>
+              <Image className={styles.photo} src={map} alt="Location"/>
             </div>
             <div className={styles.locationContainer}>
               <p>Equipe médica com mais de <br/>35 anos de experiência.</p>
-              <Image className={styles.photo} src={clinic} width={300} height={200} alt="Medical Clinic"/>
+              <Image className={styles.photo} src={clinic} width={280} height={180} alt="Medical Clinic"/>
             </div>
           </div>
         </section>
