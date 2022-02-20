@@ -51,6 +51,18 @@
   padding: 1rem 1rem 3rem;
 }
 
+.services > h2,
+.aboutUs > h2 {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 2px solid white;
+}
+
+.procedures > h2,
+.aboutLocation > h2 {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 2px solid #345170;
+}
+
 .procedures,
 .aboutUs,
 .aboutLocation {
@@ -67,7 +79,7 @@
 }
 
 .services {
-  padding-top: 50%;
+  padding-top: 40%;
   background: #10aac5;
   height: 100%;
   color: white;
@@ -189,29 +201,41 @@
   margin: 2rem 0;
 }
 
-.locationImagesContainer {
+.locationMapContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.locationContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.locationContainer > p {
-  text-align: center;
-}
-
-.locationContainer {
-  max-width: 480px;
 }
 
 .locationMap {
   margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #345170;
+  max-width: 420px;
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.locationImagesGalery {
+  max-width: 840px;
+}
+
+.locationAddresses {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.locationAddresses > p {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.locationActive {
+  border-radius: 10px;
+  background: #345170;
+  color: white;
 }
 
 .socialIconsFooter {
@@ -335,7 +359,7 @@
 
 @media screen and (min-width: 1024px) {
   .heroMsg {
-    padding-left: 2.5rem;
+    padding-left: 3rem;
   }
 
   .heroMsg > p {
@@ -356,15 +380,17 @@
     font-weight: bold;
   }
 
-  .locationImagesContainer {
-    flex-direction: row;
-    align-items: end;
+  .locationMapContainer {
+    flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 840px;
   }
 
-  .locationMap {
-    margin-bottom: 0;
+  .locationAddresses > p {
+    padding: 0.75rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .aboutUsText {
@@ -380,5 +406,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heroMsg {
+    padding-left: 5rem;
+  }
+
+  .heroMsg > p {
+    font-size: 50px;
   }
 }
