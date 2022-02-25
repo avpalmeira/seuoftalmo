@@ -1,0 +1,77 @@
+.hero {
+  padding: 0;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  background: #e0dad5;
+  height: 100%;
+}
+
+.heroMsg {
+  background-image: url(../../public/triangle-transparent.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  color: #345170;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+
+.heroMsg > p {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.heroMsg > .msgFeature {
+  font-weight: bold;
+}
+
+.heroImgWrapper {
+  overflow: hidden;
+  margin: 0;
+  background: #10aac5;
+}
+
+@media screen and (min-width: 520px) {
+  .heroMsg {
+    width: 55vw;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heroMsg > p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heroMsg {
+    padding-left: 3rem;
+  }
+
+  .heroMsg > p {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heroMsg {
+    padding-left: 5rem;
+  }
+
+  .heroMsg > p {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,41 @@
+.header {
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItems {
+  display: none;
+}
+
+.headerLinks {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 2rem 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menuItems {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin-right: 3rem;
+  }
+
+  .menuItems > a:visited,
+  .menuItems > a:link,
+  .menuItems > a:hover {
+    color: #10aac5;
+    font-weight: bold;
+  }
+}

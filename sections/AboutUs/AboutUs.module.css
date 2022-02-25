@@ -1,0 +1,41 @@
+.aboutUs {
+  background: #345170;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15% 1rem 3rem;
+}
+
+.aboutUs > h2 {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 2px solid white;
+}
+
+.aboutUsText {
+  text-align: center;
+  padding: 0 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.photo {
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutUsText {
+    text-align: left;
+    max-width: 30%;
+  }
+
+  .aboutUsFigure {
+    max-width: 40%;
+  }
+
+  .aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
