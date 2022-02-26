@@ -12,8 +12,8 @@
   background-image: url(../../public/triangle-transparent.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   color: #345170;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   padding-left: 1rem;
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 50px;
 }
 
 .heroMsg > p {
@@ -40,19 +40,27 @@
   background: #10aac5;
 }
 
+.actionButtonContainer {
+  display: none;
+}
+
 @media screen and (min-width: 520px) {
   .heroMsg {
     width: 55vw;
     height: 100%;
     padding-top: 0;
     padding-bottom: 4rem;
-    top: 40px;
+    top: 40px; /* remove */
   }
 }
 
 @media screen and (min-width: 768px) {
   .heroMsg > p {
     font-size: 1.5rem;
+  }
+
+  .actionButtonContainer {
+    display: block;
   }
 }
 
@@ -73,5 +81,6 @@
 
   .heroMsg > p {
     font-size: 50px;
+    line-height: 4rem;
   }
 }

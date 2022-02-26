@@ -15,7 +15,9 @@ export default function Hero() {
           oftalmológicos para<br/>pacientes sem plano de<br/>saúde.
         </p>
         <p className={styles.msgFeature}>Aqui você pode.</p>
-        <ActionButton text="Fale pelo WhatsApp" url="#" />
+        <div className={styles.actionButtonContainer}>
+          <ActionButton text="Fale pelo WhatsApp" url="#" />
+        </div>
       </div>
     </section>
   )

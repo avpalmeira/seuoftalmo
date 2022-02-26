@@ -8,15 +8,15 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Image src={logo} width={141} height={65} alt="SeuOftalmo Logo"/>
-      <div className={styles.headerLinks}>
-        <nav className={styles.menuItems}>
+      <nav className={styles.headerLinks}>
+        <div className={styles.menuItems}>
           <a href="#services">Serviços</a>
           <a href="#procedures">Procedimentos</a>
           <a href="#aboutUs">Quem Somos</a>
           <a href="#aboutLocation">Clínica</a>
-        </nav>
+        </div>
         <ActionButton text="Agendar Consulta" url="#"/>
-      </div>
+      </nav>
     </header>
   )
 }

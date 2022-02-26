@@ -47,3 +47,10 @@
     padding-top: 0;
   }
 }
+
+@media screen and (min-width: 900px) {
+  .serviceList {
+    width: 860px;
+    justify-content: space-between;
+  }
+}
