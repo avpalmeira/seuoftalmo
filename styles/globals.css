@@ -26,6 +26,8 @@ h2 {
   text-align: center;
 }
 
-p {
-  line-height: 2rem;
+@media screen and (min-width: 768px) {
+  p {
+    line-height: 2rem;
+  }
 }

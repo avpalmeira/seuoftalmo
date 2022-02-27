@@ -27,6 +27,7 @@
 
 .proceduresList > p {
   text-align: center;
+  line-height: 2rem;
 }
 
 .proceduresList > h3 {
@@ -34,4 +35,10 @@
   top: -30px;
   background: white;
   padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .procedures {
+    margin-top: -2rem;
+  }
 }

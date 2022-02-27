@@ -23,7 +23,21 @@
   border-radius: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .aboutUs {
+    margin-top: -2rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
+  .aboutUs {
+    padding-top: 10%;
+  }
+  .aboutUs > h2 {
+    margin-left: 17.5%;
+    align-self: flex-start;
+    z-index: 10;
+  }
   .aboutUsText {
     text-align: left;
     max-width: 30%;
