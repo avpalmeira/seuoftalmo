@@ -17,10 +17,6 @@ export default function AboutUs() {
           <p>
             Procedimentos cirúrgicos com preço acessível e facilitado - cirurgia em até 12x no cartão.
           </p>
-          <p>
-            Equipe médica com mais de 35 anos de experiência. Exames, diagnósticos e procedimentos.
-            Agilidade em marcação de horário e atendimento
-          </p>
         </div>
         <figure className={styles.aboutUsFigure}>
           <Image className={styles.photo} src={surgery} alt="Eye surgery"/>

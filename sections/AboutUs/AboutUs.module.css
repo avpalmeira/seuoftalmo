@@ -19,8 +19,13 @@
   margin-bottom: 3rem;
 }
 
+.aboutUsFigure {
+  margin-bottom: -2rem;
+}
+
 .photo {
   border-radius: 6px;
+  z-index: 10;
 }
 
 @media screen and (min-width: 768px) {
@@ -41,10 +46,12 @@
   .aboutUsText {
     text-align: left;
     max-width: 30%;
+    margin-bottom: 3rem;
   }
 
   .aboutUsFigure {
     max-width: 40%;
+    margin-bottom: -6rem;
   }
 
   .aboutUsContainer {
