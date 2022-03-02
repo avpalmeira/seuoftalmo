@@ -13,7 +13,6 @@
 }
 
 .heroMsg > p {
-  font-size: 18px;
   margin-top: 0;
 }
 
@@ -42,7 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 0;
     padding-left: 1rem;
     position: absolute;
     left: 0;
@@ -54,9 +53,7 @@
   .heroMsg {
     width: 55vw;
     height: 100%;
-    padding-top: 0;
     padding-bottom: 4rem;
-    top: 40px; /* remove */
   }
 }
 
@@ -76,16 +73,19 @@
 @media screen and (min-width: 1024px) {
   .heroMsg {
     padding-left: 3rem;
+    padding-top: 3rem;
   }
 
   .heroMsg > p {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
+    line-height: 3rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .heroMsg {
     padding-left: 5rem;
+    padding-top: 0;
   }
 
   .heroMsg > p {

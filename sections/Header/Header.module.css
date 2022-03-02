@@ -16,11 +16,21 @@
   align-items: center;
 }
 
+.logoContainer {
+  width: 141px;
+  height: 65px;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 2rem 3rem;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .logoContainer {
+    width: 180px;
+    height: 90px;
   }
 }
 
@@ -37,5 +47,12 @@
   .menuItems > a:hover {
     color: #10aac5;
     font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menuItems {
+    font-size: 18px;
+    width: 580px;
   }
 }

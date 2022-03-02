@@ -7,7 +7,9 @@ export default function Header() {
   
   return (
     <header className={styles.header}>
-      <Image src={logo} width={141} height={65} alt="SeuOftalmo Logo"/>
+      <div className={styles.logoContainer}>
+        <Image src={logo} alt="SeuOftalmo Logo"/>
+      </div>
       <nav className={styles.headerLinks}>
         <div className={styles.menuItems}>
           <a href="#services">Serviços</a>
