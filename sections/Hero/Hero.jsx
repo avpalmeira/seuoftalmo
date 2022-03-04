@@ -10,9 +10,9 @@ export default function Hero() {
         <Image className={styles.heroImg} src={heroImg} alt="Visão melhorada" />
       </div>
       <div className={styles.heroMsg}>
-        <p>
-          A Central de<br/>Atendimento em<br/>procedimentos<br/>
-          oftalmológicos para<br/>pacientes sem plano de<br/>saúde.
+        <p className={styles.msgText}>
+          A Central de<br/>atendimento em<br/>tratamento ocular com<br/>
+          preço popular para<br/>pacientes sem plano de<br/>saúde.
         </p>
         <p className={styles.msgFeature}>Aqui você pode.</p>
         <div className={styles.actionButtonContainer}>

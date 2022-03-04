@@ -10,13 +10,13 @@ import styles from './AboutLocation.module.css'
 export default function AboutLocation() {
   const addresses = [
     {
-      street: 'Avenida Rosa e Silva 428',
+      street: 'Av. Rosa e Silva 428',
       neighborhood: 'Aflitos',
       cityState: 'Recife - PE',
       map: map1,
     },
     {
-      street: 'Avenida Conselheiro Aguiar 726',
+      street: 'Av. Conselheiro Aguiar 726',
       neighborhood: 'Boa Viagem',
       cityState: 'Recife - PE',
       map: map2,

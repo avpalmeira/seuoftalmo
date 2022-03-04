@@ -17,6 +17,10 @@ a {
   box-sizing: border-box;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 section {
   padding: 1rem;
 }

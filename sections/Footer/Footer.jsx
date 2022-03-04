@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
       </div>
       <p>Copyright 2022 SeuOftalmo. Todos os direitos reservados.</p>
-      <p>O site SeuOftalmo.com.br é de propriedade da Visão 360 Ltda. registrada sob o CNPJ 25.186.815/0001-38</p>
+      <p>O site SeuOftalmo.com.br é de propriedade da Seu Oftalmo Ltda. registrada sob o CNPJ 44.798.334/0001-28</p>
     </footer>
   )
 }

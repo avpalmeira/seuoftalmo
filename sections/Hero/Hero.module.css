@@ -16,6 +16,10 @@
   margin-top: 0;
 }
 
+.heroMsg > .msgText {
+  font-weight: normal;
+}
+
 .heroMsg > .msgFeature {
   font-weight: bold;
 }

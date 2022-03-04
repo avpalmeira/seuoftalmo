@@ -15,7 +15,7 @@ export default function Header() {
           <a href="#services">Serviços</a>
           <a href="#procedures">Procedimentos</a>
           <a href="#aboutUs">Quem Somos</a>
-          <a href="#aboutLocation">Clínica</a>
+          <a href="#aboutLocation">Clínicas</a>
         </div>
         <ActionButton text="Agendar Consulta" url="#"/>
       </nav>
