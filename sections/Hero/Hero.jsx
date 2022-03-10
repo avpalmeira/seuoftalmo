@@ -16,7 +16,7 @@ export default function Hero() {
         </p>
         <p className={styles.msgFeature}>Aqui você pode.</p>
         <div className={styles.actionButtonContainer}>
-          <ActionButton text="Fale pelo WhatsApp" url="#" />
+          <ActionButton text="Fale pelo WhatsApp" />
         </div>
       </div>
     </section>

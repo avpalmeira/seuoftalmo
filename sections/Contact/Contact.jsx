@@ -6,7 +6,7 @@ export default function Contact() {
     <section className={styles.contact}>
       <h2>Fale Conosco!</h2>
       <p>Queremos te ajudar.</p>
-      <ActionButton text="Tire suas dúvidas" url="#" />
+      <ActionButton text="Tire suas dúvidas" />
     </section>
   )
 }

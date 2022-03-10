@@ -17,7 +17,7 @@ export default function Header() {
           <a href="#aboutUs">Quem Somos</a>
           <a href="#aboutLocation">Clínicas</a>
         </div>
-        <ActionButton text="Agendar Consulta" url="#"/>
+        <ActionButton text="Agendar Consulta"/>
       </nav>
     </header>
   )
