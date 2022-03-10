@@ -8,7 +8,7 @@ export default function ActionButton({ text, url }) {
       <span className={styles.actionButtonText}>
         {text}
       </span>
-      <FontAwesomeIcon icon={faWhatsapp} />
+      <FontAwesomeIcon className={styles.actionIcon} icon={faWhatsapp} />
     </a>
   )
 }
