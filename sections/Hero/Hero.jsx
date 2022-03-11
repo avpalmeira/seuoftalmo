@@ -11,10 +11,10 @@ export default function Hero() {
       </div>
       <div className={styles.heroMsg}>
         <p className={styles.msgText}>
-          A Central de<br/>atendimento em<br/>tratamento ocular com<br/>
-          preço popular para<br/>pacientes sem plano de<br/>saúde.
+          Central de<br />atendimento em<br />tratamento ocular com<br />
+          preço popular para<br />pacientes sem plano de<br />saúde.
         </p>
-        <p className={styles.msgFeature}>Aqui você pode.</p>
+        <p className={styles.msgFeature}>Medicina Acessível.</p>
         <div className={styles.actionButtonContainer}>
           <ActionButton text="Fale pelo WhatsApp" />
         </div>
