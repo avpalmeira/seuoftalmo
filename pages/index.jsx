@@ -7,11 +7,12 @@ import Header from '../sections/Header/Header'
 import Hero from '../sections/Hero/Hero'
 import Procedures from '../sections/Procedures/Procedures'
 import Services from '../sections/Services/Services'
+import styles from './app.module.css';
 
 export default function Home() {
 
   return (
-    <div>
+    <>
       <Head>
         <title>Seu Oftalmo</title>
         <meta
@@ -21,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={styles.appLayout}>
         <Header />
         <Hero />
         <Services />
@@ -31,6 +32,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
-    </div>
+    </>
   )
 }

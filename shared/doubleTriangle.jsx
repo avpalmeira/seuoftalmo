@@ -7,7 +7,7 @@ const colors = {
 
 const doubleTriangleStyle = {
   position: 'relative',
-  marginLeft: '-4rem',
+  marginLeft: '-2rem',
   width: '100%',
 }
 
