@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A complete institutional website for ophthalmology services built from scratch.
+
+## Single Page Website
+
+<img alt="Web page" src="docs/full-page.jpeg" />
 
 ## Getting Started
 
